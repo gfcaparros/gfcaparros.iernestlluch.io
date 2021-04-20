@@ -72,7 +72,7 @@ a {
 </head>
 <body>
 
-<form onclick="execute" action="execution">
+<form action="https://script.google.com/a/macros/iernestlluch.cat/s/AKfycbyaEJwc6LJHNloHlpstDSWhfL4wC7HcjxIJ4L_6xcXd/dev">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>

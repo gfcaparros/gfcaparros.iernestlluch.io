@@ -1,37 +1,97 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="923387660140-o1jv3f26ev60doo3n39s3aead8folka9.apps.googleusercontent.com">
+<style>
 
-You can use the [editor on GitHub](https://github.com/gfcaparros/iernestlluch/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* {
+  box-sizing: border-box;
+}
 
-### Markdown
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-```markdown
-Syntax highlighted code block
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
-# Header 1
-## Header 2
-### Header 3
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
 
-- Bulleted
-- List
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
-1. Numbered
-2. List
+.registerbtn:hover {
+  opacity: 1;
+}
 
-**Bold** and _Italic_ and `Code` text
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
 
-[Link](url) and ![Image](src)
-```
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<form onclick="execute" action="execution">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-### Jekyll Themes
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gfcaparros/iernestlluch/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email">
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-### Support or Contact
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>

@@ -72,11 +72,10 @@ a {
 </head>
 <body>
 
-<form action="https://script.google.com/a/macros/iernestlluch.cat/s/AKfycbyaEJwc6LJHNloHlpstDSWhfL4wC7HcjxIJ4L_6xcXd/dev">
+<form action="https://script.google.com/a/macros/iernestlluch.cat/s/AKfycbyaEJwc6LJHNloHlpstDSWhfL4wC7HcjxIJ4L_6xcXd/dev" method="get">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
-    <hr>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
@@ -87,10 +86,7 @@ a {
 
     <button type="submit" class="registerbtn">Register</button>
   </div>
-  
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
+
 </form>
 
 </body>
